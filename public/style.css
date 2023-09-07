@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./assets/main.svg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 36em;
+  width: 74em;
+  border-radius: 20px;
+  background: rgba(83, 77, 77, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.75em;
+}
+#location {
+  width: 601px;
+  height: 52px;
+  background: #ebebeb;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#input {
+  background: #ebebeb;
+  height: 2.5rem;
+  width: 20em;
+  border: none;
+  outline: none;
+  padding-left: 1em;
+  font-size: 25px;
+  border-radius: 10px;
+}
+button {
+  border-color: white;
+  border-radius: 45%;
+}
+button:hover {
+  border: none;
+  background-color: rgba(216, 205, 205, 0.356);
+}
+#tempcitylogo {
+  display: flex;
+  gap: 2em;
+}
+#temp_city {
+  width: 30em;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.temp {
+  height: 103px;
+}
+#city,
+#des {
+  font-family: "Asap", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4em;
+  line-height: 92px;
+  color: white;
+}
+#des {
+  font-size: 2em;
+}
+#temp {
+  /* background-color: red; */
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6em;
+  line-height: 92px;
+  color: white;
+  width: max-content;
+}
+#info {
+  font-size: 0.75em;
+  align-self: flex-start;
+  padding-left: 4em;
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+}
+#info > div {
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 82px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  width: 24em;
+  height: 24em;
+}
+@media only screen and (max-width: 680px) {
+  body {
+    /* background-image: url(./assets/mainmobilebg.png); */
+    height: 100vh;
+    background: linear-gradient(216.46deg, rgba(0, 123, 255, 0.75) 5.37%, rgba(165, 134, 252, 0.75) 78.75%);
+  }
+  #container {
+    width: 342px;
+    height: 600px;
+    flex-direction: column;
+    background: rgba(83, 77, 77, 0.1);
+    backdrop-filter: blur(15px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  #location {
+    width: 281px;
+    height: 52px;
+  }
+  #input {
+    width: 9em;
+  }
+  button {
+    border-color: white;
+    border-radius: 10%;
+    border: none;
+  }
+  #tempcitylogo {
+    display: block;
+  }
+  #temp_city {
+    width: 15em;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .temp {
+    height: 51px;
+  }
+  #city,
+  #des {
+    font-family: "Asap", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 46px;
+    color: white;
+  }
+  #des {
+    font-size: 1.2em;
+  }
+  #temp {
+    font-family: "Abel", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 36px;
+    color: white;
+    width: max-content;
+  }
+  #info {
+    padding-left: 2.5em;
+    display: block;
+  }
+  #info > div {
+    font-family: "Abel", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 30px;
+    color: white;
+    display: block;
+  }
+  #logo{
+    height: 12em;
+    width: 13em;
+    padding-left: 3em;
+  }
+}
